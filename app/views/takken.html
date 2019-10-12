@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clefest Website</title>
+    <link rel="stylesheet" type="text/css" href="takken.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/thefreeforty/30/thefreeforty_register-512.png">
+    <style>
+            /* Center the loader */
+            #loader {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              z-index: 1;
+              width: 150px;
+              height: 150px;
+              margin: -75px 0 0 -75px;
+              border: 16px solid #f3f3f3;
+              border-radius: 50%;
+              border-top: 16px solid #3498db;
+              width: 120px;
+              height: 120px;
+              -webkit-animation: spin 2s linear infinite;
+              animation: spin 2s linear infinite;
+            }
+            
+            @-webkit-keyframes spin {
+              0% { -webkit-transform: rotate(0deg); }
+              100% { -webkit-transform: rotate(360deg); }
+            }
+            
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+            
+            /* Add animation to "page content" */
+            .animate-bottom {
+              position: relative;
+              -webkit-animation-name: animatebottom;
+              -webkit-animation-duration: 1s;
+              animation-name: animatebottom;
+              animation-duration: 1s
+            }
+            
+            @-webkit-keyframes animatebottom {
+              from { bottom:-100px; opacity:0 } 
+              to { bottom:0px; opacity:1 }
+            }
+            
+            @keyframes animatebottom { 
+              from{ bottom:-100px; opacity:0 } 
+              to{ bottom:0; opacity:1 }
+            }
+            
+            #myDiv {
+              display: none;
+              text-align: center;
+            }
+            </style>
+
+
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="loader"></div>
+
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+   <script>
+     setTimeout(function() {
+   $('#teste').fadeOut('fast');
+  }, 6000);
+   
+   </script>   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
+  <div id="teste" class="alert alert-success">
+      
+    <strong>Bom dia!</strong> seja bem-vindo(a)!
+  </div>
+  <ul>
+    <li>
+      <a class="active" href="/clefest">Artigo</a>
+    </li>
+    <li>
+      <a href="/about">Mais informações</a>
+    </li>
+    </ul>
+  <center><h1>Fazemos o melhor para o mundo!</h1></center>
+  <h2><strong>“Nossa vida é o que nossos pensamentos fazem dela.“</strong></h2>
+            
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p><p>&nbsp;</p>
+  <div class="text">
+    <p class="texto">Nós (CLEFEST) somos uma empresa em que constitui como uma função de poder ajudar e melhorar os avanços da tecnologia através de programação de software e tambem de implementação de conteúdos com o hardware. Brevemente estaremos a atualizar as nossas ferramentas para podermos criar uma invenção de um dispositivo em que baseia-se num hardware que contêm as funcionalidades para obter o WI-FI configurando na pulseira do watchOS.</p>
+  </div>
+  <a href="https://www.instagram.com/takkenyxz/" target="_blank"><img border="0" alt="Instagram Takken" src="https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-04-512.png" width="100"></a>
+
+
+  <a href="https://www.instagram.com/guipaulo53/" target="_blank"><img border="0" alt="Instagram Guilherme" src="https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-04-512.png" width="100"></a>
+            
+          
+          
+  </div>
+  
+        
+  <script>
+  var myVar;
+        
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+        
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+
+
+
+
+  
+  
+<style>
+h1 {
+        color: lightyellow;
+        text-shadow:2px 2px 4px;
+}
+
+h2 {
+    color: honeydew;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow:2px 2px;
+
+}
+
+.texto {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+    color:honeydew;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out 0.1s;
+    font-size: 10px;
+
+    
+}
+
+.texto:hover {
+    opacity:1;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out 0.1s;
+    font-size: 20px;
+}
+
+.text {
+    
+    padding: 8px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: black;
+}
+.active {
+  background-color: #4CAF50;
+}
+</style>
+  
+
+</body>
+</html>
+
+

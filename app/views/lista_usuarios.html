@@ -1,0 +1,25 @@
+% rebase('base.html', title='Lista de Usuários')
+
+<div class="panel-heading">
+    <h3 class="panel-title">Lista de usuários</h3>
+</div>
+
+% if acesso:
+    <div class="alert alert-success">
+        <strong>Sucesso!</strong> Olá!, seja bem-vindo(a)!
+    </div>
+    <ul class="list-group">
+    % for usuario in usuarios:
+        <li class="list-group-item">{{ usuario.username }}</li>
+    % end
+        <center><a href="/clefest" class="btn btn-sucess">Clique aqui para ir a website principal.</a></center>
+</ul>
+
+
+    % else:
+    <div class="alert alert-danger">
+        <center>
+            <p><strong>Acesso Negado!</strong></p>
+        </center>
+    </div>
+    % end

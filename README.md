@@ -1,2 +1,2 @@
-# CLEFEST
+# CLEFEST Project
 Projeto Clefest

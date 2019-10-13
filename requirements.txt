@@ -4,7 +4,7 @@ bottle==0.12.17
 bottle-session==0.9
 bottle-sqlalchemy==0.4.3
 cookiecutter==1.6.0
-cryptography==2.1.4
+cryptography==2.3
 Flask==1.1.1
 flask-ngrok==0.0.25
 Flask-SQLAlchemy==2.4.1
